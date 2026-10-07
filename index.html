@@ -14,7 +14,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
 
-<!-- PIXEL DA META: colar aqui o código do pixel novo quando ele for criado -->
+<!-- Meta Pixel: Brazil Travel Manual -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1609216094003344');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'1,500 Truly Essential Phrases for Visiting Brazil',content_type:'product',value:10,currency:'USD'});
+document.addEventListener('click',function(e){var a=e.target.closest('a[href*="pay.hotmart.com"]');if(a)fbq('track','InitiateCheckout',{value:10,currency:'USD'});});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1609216094003344&ev=PageView&noscript=1"></noscript>
 
 <style>
   :root {
