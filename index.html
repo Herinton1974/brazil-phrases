@@ -21,6 +21,8 @@ fbq('init','1609216094003344');
 fbq('track','PageView');
 fbq('track','ViewContent',{content_name:'1,500 Truly Essential Phrases for Visiting Brazil',content_type:'product',value:10,currency:'USD'});
 document.addEventListener('click',function(e){var a=e.target.closest('a[href*="pay.hotmart.com"]');if(a)fbq('track','InitiateCheckout',{value:10,currency:'USD'});});
+// Leva a origem do anúncio para a Hotmart (aparece como SCK nas vendas)
+document.addEventListener('DOMContentLoaded',function(){var q=new URLSearchParams(location.search),c=q.get('utm_content');if(!c)return;document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(function(a){var u=new URL(a.href);u.searchParams.set('sck',c.slice(0,40));a.href=u.toString();});});
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1609216094003344&ev=PageView&noscript=1"></noscript>
 
